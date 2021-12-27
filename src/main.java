@@ -9,49 +9,47 @@ public class main {
 
         // use for date java.time.LocalDate.now()
 
-        while(run){
-            menu();
-            run=false;
-        }
     }
+
+    //Things below will likely be scrapped to make project OOP
 
     public static void addExpense(int cat){
 
         String output = "";
+
 
         switch(cat){
             case 1:
                 output += "Rent,";
                 break;
             case 2:
-                output += "Tuition";
+                output += "Tuition,";
                 break;
             case 3:
-                output += "Utilities";
+                output += "Utilities,";
                 break;
             case 4:
-                output += "Groceries";
+                output += "Groceries,";
                 break;
             case 5:
-                output += "Restaurant";
+                output += "Restaurant,";
                 break;
             case 6:
-                output += "Entertainment";
+                output += "Entertainment,";
                 break;
             case 7:
-                output += "Clothing";
+                output += "Clothing,";
                 break;
             case 8:
-                output += "Travel";
+                output += "Travel,";
                 break;
             case 9:
-                output += "Other";
+                output += "Other,";
                 break;
             default:
                 System.out.println("Invalid selection, going back to main selection...\n");
                 menu();
         }
-
     }
 
     private static void menu(){
