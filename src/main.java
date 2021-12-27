@@ -17,25 +17,35 @@ public class main {
 
     public static void addExpense(int cat){
 
+        String output = "";
 
         switch(cat){
             case 1:
+                output += "Rent,";
                 break;
             case 2:
+                output += "Tuition";
                 break;
             case 3:
+                output += "Utilities";
                 break;
             case 4:
+                output += "Groceries";
                 break;
             case 5:
+                output += "Restaurant";
                 break;
             case 6:
+                output += "Entertainment";
                 break;
             case 7:
+                output += "Clothing";
                 break;
             case 8:
+                output += "Travel";
                 break;
             case 9:
+                output += "Other";
                 break;
             default:
                 System.out.println("Invalid selection, going back to main selection...\n");
